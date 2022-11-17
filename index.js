@@ -16,8 +16,7 @@ function view() {
      type="text" 
      placeholder="Skriv her og trykk ENTER ...."
      onkeydown="if (event.code ==='Enter') addItem(this.value)"
-     required  
-     required></input>
+     ></input>
 `
     html += `<div class=shoppingList>`
     for (let i in myArray) {
@@ -35,14 +34,12 @@ function addItem(item) {
     myArray.push(item.toLowerCase());
     inputId.value = '';
     view();
-
 }
 function remove(clicked) {
     for (let i in myArray) {
         if (myArray[i] == clicked.toLowerCase()) {
             myArray.splice(i, 1)
         }
-
     }
     view();
 }
