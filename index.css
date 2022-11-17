@@ -1,0 +1,25 @@
+li {
+    user-select: none;
+    cursor: pointer;
+}
+
+body {
+    text-align: center;
+}
+
+.shoppingList {
+    margin-top: 20px;
+    font-size: larger;
+    text-align: left;
+    width: 300px;
+    font-weight: bolder;
+}
+
+.inputId {
+    width: 400px;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
