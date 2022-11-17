@@ -8,7 +8,7 @@ function view() {
     html = '';
     html = /*HTML*/`
  <h1>Oppdatert handleliste</h1>
- <h2>Skriv inn i feltet og trykk enter for å legge til i lisa!</h2>
+ <h2>Skriv inn i feltet og trykk enter for å legge til i lista!</h2>
  <h3>Klikk med musa på et element for å fjerne det fra lista igjen!</h3>
  <input 
      class ="inputId" 
