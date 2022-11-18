@@ -17,7 +17,9 @@ function view() {
      placeholder="Skriv her og trykk ENTER ...."
      onkeydown="if (event.code ==='Enter') addItem(this.value)"
      ></input>
+           
 `
+    
     html += `<div class=shoppingList>`
     for (let i in myArray) {
         let listItem = myArray[i];
@@ -27,12 +29,15 @@ function view() {
     html += `</div>`
     let appDiv = document.getElementById('app')
     appDiv.innerHTML = html;
+    document.getElementById('inputId').focus()
+
 }
 
 // Controller
 function addItem(item) {
     myArray.push(item.toLowerCase());
-    inputId.value = '';
+    // inputId.value = '';
+    
     view();
 }
 function remove(clicked) {
